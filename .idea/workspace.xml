@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="681b796f-860c-417b-a8cb-0d659e6fc44b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/data/products.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -12,6 +13,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1pYKZAwso7VR2CZmM3EJYRDNFot" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -36,6 +45,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/data" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -48,7 +58,9 @@
       <option name="presentableId" value="Default" />
       <updated>1615354637792</updated>
       <workItem from="1615354638955" duration="966000" />
-      <workItem from="1615355625831" duration="3932000" />
+      <workItem from="1615355625831" duration="4618000" />
+      <workItem from="1615363475900" duration="343000" />
+      <workItem from="1615434859400" duration="3499000" />
     </task>
     <servers />
   </component>
@@ -66,5 +78,17 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/frontend/src/screens/ProductScreen.jsx</url>
+          <line>64</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
