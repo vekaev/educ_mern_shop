@@ -32,3 +32,35 @@ H
 backend/data/products.js,f/9/f91886f77f99c2aac5462148ce0abe44b9698ff2
 A
 backend/server.js,6/a/6ad52417a68c4b063613f13b17bfb50a32650e68
+D
+backend/config/db.js,d/b/db9fd2d934bed0e5407bec0632458431060d67b2
+M
+backend/models/order.model.js,0/9/0976525fcc59eb41fef158e570e2051f79b13b6a
+L
+backend/models/user.model.js,1/3/130316dac5130e27940caf08a79d5615322a38fb
+O
+backend/models/product.model.js,4/b/4b97f5ca4d3b8808de73b590eeb6e1c9914b3497
+E
+backend/data/users.js,2/a/2a6d0e010722e054c28d740e55fc213aec206998
+T
+$.idea/codeStyles/codeStyleConfig.xml,d/d/dd7b3350c29c49497756c7f32c69a3bed18b1cba
+A
+backend/seeder.js,7/4/74a1182798907c8a89f30c616a2e9f8d57d82816
+V
+&backend/middleware/error.middleware.js,9/5/9534505149d8e5b62c361dc30c15ae9ea81270e5
+R
+"frontend/src/components/Loader.jsx,6/c/6c83005b3fc0f527add636e1565c7da1247ac02a
+S
+#frontend/src/components/Message.jsx,b/4/b4ed453b3d91fd6dd6445f9917b1c144e0f5e02d
+O
+backend/routes/productRoutes.js,a/7/a7799c82d9aa8670f9ce04ae76bf882b04936aae
+K
+frontend/src/store/types.js,e/e/ee33e473fee1b59deb4e499bf7a5cb01bd5b8d80
+T
+$frontend/src/store/reducers/index.js,6/1/612f03b5b417b316230d5eead1eabf23f0882ce1
+K
+frontend/src/store/index.js,a/6/a6f9e6a47d2095a7570592b7a1b7b793e88b81c1
+^
+.frontend/src/store/reducers/product.reducer.js,9/d/9d07a3eda7bce981394d8d8f5924839617e95710
+\
+,frontend/src/store/actions/product.action.js,f/d/fd0156c6e4a874b5cffe4c59403b32163ebf9c63
