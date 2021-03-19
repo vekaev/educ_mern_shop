@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="681b796f-860c-417b-a8cb-0d659e6fc44b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/backend/controllers/product.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/controllers/user.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/middleware/auth.middleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/services/product.service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/services/user.service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/utils/generateToken.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/user.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/user.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/productRoutes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/indexServer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +60,23 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="server" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="server" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.server" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -64,7 +92,13 @@
       <workItem from="1615485069120" duration="10242000" />
       <workItem from="1615533272496" duration="590000" />
       <workItem from="1615549570525" duration="109000" />
-      <workItem from="1615784554717" duration="4087000" />
+      <workItem from="1615784554717" duration="4328000" />
+      <workItem from="1615805426476" duration="26000" />
+      <workItem from="1615868189952" duration="6652000" />
+      <workItem from="1615960176441" duration="2466000" />
+      <workItem from="1615964421576" duration="830000" />
+      <workItem from="1616092884939" duration="1793000" />
+      <workItem from="1616128761019" duration="5875000" />
     </task>
     <servers />
   </component>

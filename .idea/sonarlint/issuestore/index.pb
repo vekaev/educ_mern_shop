@@ -30,8 +30,6 @@ E
 frontend/package.json,3/7/37083060967a471c011a16651e22bdc2ade41759
 H
 backend/data/products.js,f/9/f91886f77f99c2aac5462148ce0abe44b9698ff2
-A
-backend/server.js,6/a/6ad52417a68c4b063613f13b17bfb50a32650e68
 D
 backend/config/db.js,d/b/db9fd2d934bed0e5407bec0632458431060d67b2
 M
@@ -52,8 +50,6 @@ R
 "frontend/src/components/Loader.jsx,6/c/6c83005b3fc0f527add636e1565c7da1247ac02a
 S
 #frontend/src/components/Message.jsx,b/4/b4ed453b3d91fd6dd6445f9917b1c144e0f5e02d
-O
-backend/routes/productRoutes.js,a/7/a7799c82d9aa8670f9ce04ae76bf882b04936aae
 K
 frontend/src/store/types.js,e/e/ee33e473fee1b59deb4e499bf7a5cb01bd5b8d80
 T
@@ -64,3 +60,29 @@ K
 .frontend/src/store/reducers/product.reducer.js,9/d/9d07a3eda7bce981394d8d8f5924839617e95710
 \
 ,frontend/src/store/actions/product.action.js,f/d/fd0156c6e4a874b5cffe4c59403b32163ebf9c63
+J
+frontend/public/index.html,5/3/53b461857fde9b76a1c6e79a500050ceffbd7f33
+M
+frontend/src/screens/index.js,c/e/ce756cb8ebe6ee05129dc59ceb1dab8229e37783
+[
++frontend/src/store/reducers/cart.reducer.js,4/9/49d5a7efcb6fdd04bdc359fca304369bb8b62280
+Y
+)frontend/src/store/actions/cart.action.js,3/7/3733c84b0805c6dbfd99b588f46e7325520c194e
+S
+#frontend/src/screens/CartScreen.jsx,6/a/6abad6a3f372db58ef17977c24d02a4f2e563dbd
+S
+#backend/services/product.service.js,0/7/0744a019870056db707806725f2c646e23ae7d04
+P
+ backend/services/user.service.js,d/1/d178259c3bc1d31a1c371614644bfaa776eecc72
+Y
+)backend/controllers/product.controller.js,e/1/e14c7608487b56d05e8f59a8064ef19dadc74599
+V
+&backend/controllers/user.controller.js,c/3/c3294daa67040a2856cb5eadb2d348723a957f8f
+A
+package-lock.json,f/a/fa288d1472d29beccb489a676f68739ad365fc47
+F
+backend/indexServer.js,8/7/87be3c764b7bf50bec0d47c1aa7cb8bc3ac277d3
+N
+backend/utils/generateToken.js,4/5/4584388edc6c819a1027894bc424dd1df61e3df6
+U
+%backend/middleware/auth.middleware.js,2/2/22093368bb5a3bf3f6c98f451367e11b08f74210
