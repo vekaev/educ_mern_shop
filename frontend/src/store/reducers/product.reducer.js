@@ -4,7 +4,7 @@ import {
   PRODUCT_LIST_FAIL,
   PRODUCT_DETAILS_FAIL,
   PRODUCT_DETAILS_SUCCESS, PRODUCT_DETAILS_REQUEST
-} from "../types";
+} from "../constants/product.constants";
 
 const initialState = {products: [], product:{ reviews: []}};
 

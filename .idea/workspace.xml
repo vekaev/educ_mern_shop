@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="681b796f-860c-417b-a8cb-0d659e6fc44b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/controllers/product.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/controllers/user.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/middleware/auth.middleware.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/services/product.service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/services/user.service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/utils/generateToken.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/controllers/order.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/services/order.service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/user.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/user.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/productRoutes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/indexServer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/user.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/indexServer.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/indexServer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/middleware/auth.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/middleware/auth.middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/services/user.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/services/user.service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +51,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/store/constants" />
       <recent name="$PROJECT_DIR$/backend/data" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -98,7 +94,15 @@
       <workItem from="1615960176441" duration="2466000" />
       <workItem from="1615964421576" duration="830000" />
       <workItem from="1616092884939" duration="1793000" />
-      <workItem from="1616128761019" duration="5875000" />
+      <workItem from="1616128761019" duration="6553000" />
+      <workItem from="1616158494304" duration="779000" />
+      <workItem from="1616232069461" duration="36000" />
+      <workItem from="1616232132740" duration="44000" />
+      <workItem from="1616389831400" duration="6922000" />
+      <workItem from="1616475343824" duration="2393000" />
+      <workItem from="1616560639742" duration="3960000" />
+      <workItem from="1616652502699" duration="3219000" />
+      <workItem from="1616694687929" duration="5985000" />
     </task>
     <servers />
   </component>
