@@ -8,6 +8,8 @@ import ShippingScreen from "./ShippingScreen";
 import PaymentScreen from "./PaymentScreen";
 import PlaceOrderScreen from "./PlaceOrderScreen";
 import OrderScreen from "./OrderScreen";
+import UserListScreen from "./UserListScreen";
+import UserEditScreen from "./UserEditScreen";
 
 export {
   HomeScreen,
@@ -19,7 +21,9 @@ export {
   ShippingScreen,
   PaymentScreen,
   PlaceOrderScreen,
-  OrderScreen
+  OrderScreen,
+  UserListScreen,
+  UserEditScreen
 }
 
 // const Screen = () => {

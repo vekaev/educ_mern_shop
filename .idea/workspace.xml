@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="681b796f-860c-417b-a8cb-0d659e6fc44b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/controllers/order.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/services/order.service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/middleware/role.middleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/user.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/indexServer.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/indexServer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/middleware/auth.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/middleware/auth.middleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/services/user.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/services/user.service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +53,17 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="server" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -69,6 +76,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.server" />
       </list>
     </recent_temporary>
@@ -102,7 +110,12 @@
       <workItem from="1616475343824" duration="2393000" />
       <workItem from="1616560639742" duration="3960000" />
       <workItem from="1616652502699" duration="3219000" />
-      <workItem from="1616694687929" duration="5985000" />
+      <workItem from="1616694687929" duration="6373000" />
+      <workItem from="1616933679559" duration="612000" />
+      <workItem from="1616996149274" duration="10000" />
+      <workItem from="1616997812158" duration="243000" />
+      <workItem from="1617168099843" duration="2615000" />
+      <workItem from="1617254933775" duration="3260000" />
     </task>
     <servers />
   </component>

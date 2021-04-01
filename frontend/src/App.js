@@ -12,10 +12,12 @@ import {
   ShippingScreen,
   PaymentScreen,
   PlaceOrderScreen,
-  OrderScreen
+  OrderScreen, UserListScreen, UserEditScreen
 } from "./screens";
+import {useSelector} from "react-redux";
 
 const App = () => {
+  const {userInfo} = useSelector(state => state.userLogin )
   return (
     <Router>
       <Header/>
@@ -30,6 +32,12 @@ const App = () => {
           <Route path="/shipping" component={ShippingScreen}/>
           <Route path="/product/:id" component={ProductScreen}/>
           <Route path="/cart/:id?" component={CartScreen}/>
+          {userInfo && userInfo.isAdmin && (
+            <>
+              <Route path="/admin/usersList" component={UserListScreen}/>
+              <Route path="/admin/user/:id/edit" component={UserEditScreen}/>
+            </>
+          )}
           <Route path="/" component={HomeScreen} exact/>
         </Container>
       </main>
