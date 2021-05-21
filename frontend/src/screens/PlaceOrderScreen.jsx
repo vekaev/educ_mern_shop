@@ -11,7 +11,7 @@ export const addDecimals = (num) => (Math.round(num * 100) / 100).toFixed(2)
 const PlaceOrderScreen = ({history}) => {
   const dispatch = useDispatch();
   const cart = useSelector(state => state.cart)
-  const { order, success, error} = useSelector(state => state.orderCreate)
+  const {order, success, error} = useSelector(state => state.orderCreate)
 
   cart.itemsPrice = addDecimals(cart.orderItems.reduce((acc, item) => acc + item.price * item.qty, 0))
   cart.shippingPrice = addDecimals(cart.itemsPrice > 100 ? 0 : 100);
@@ -100,10 +100,11 @@ const PlaceOrderScreen = ({history}) => {
                 </Row>
               </ListGroup.Item>
               {error && <ListGroup.Item>
-                 <Message variant='danger'>{error}</Message>}
-              </ListGroup.Item> }
+                <Message variant='danger'>{error}</Message>}
+              </ListGroup.Item>}
               <ListGroup.Item>
-                <Button type='button' className='btn-block' disabled={cart.orderItems.length === 0} onClick={placeOrderHandler}>Place Order</Button>
+                <Button type='button' className='btn-block' disabled={cart.orderItems.length === 0}
+                        onClick={placeOrderHandler}>Place Order</Button>
               </ListGroup.Item>
 
             </ListGroup>

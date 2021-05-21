@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const Rating = ({ value, text, color }) => {
+export const Rating = ({value, text, color}) => {
   return (
     <div className='rating'>
       <span>

@@ -1,7 +1,8 @@
 import axios from "axios";
 import {
   USER_DELETE_FAIL,
-  USER_DELETE_REQUEST, USER_DELETE_SUCCESS,
+  USER_DELETE_REQUEST,
+  USER_DELETE_SUCCESS,
   USER_DETAILS_FAIL,
   USER_DETAILS_REQUEST,
   USER_DETAILS_RESET,
@@ -98,7 +99,7 @@ export const getUserDetails = (id) => async (dispatch, getState) => {
       type: USER_DETAILS_REQUEST
     })
 
-    const { userLogin: { userInfo } } = getState()
+    const {userLogin: {userInfo}} = getState()
     const config = {
       headers: {
         'Content-type': 'application/json',
@@ -126,7 +127,7 @@ export const updateUserProfile = (user) => async (dispatch, getState) => {
       type: USER_UPDATE_PROFILE_REQUEST
     })
 
-    const { userLogin: { userInfo } } = getState()
+    const {userLogin: {userInfo}} = getState()
 
     const config = {
       headers: {
@@ -135,7 +136,7 @@ export const updateUserProfile = (user) => async (dispatch, getState) => {
       }
     }
 
-    const {data} = await axios.put(`/api/users/profile`,user, config)
+    const {data} = await axios.put(`/api/users/profile`, user, config)
 
     dispatch({
       type: USER_UPDATE_PROFILE_SUCCESS,
@@ -156,7 +157,7 @@ export const listUsers = (user) => async (dispatch, getState) => {
       type: USER_LIST_REQUEST
     })
 
-    const { userLogin: { userInfo } } = getState()
+    const {userLogin: {userInfo}} = getState()
 
     const config = {
       headers: {
@@ -184,7 +185,7 @@ export const deleteUser = (id) => async (dispatch, getState) => {
       type: USER_DELETE_REQUEST
     })
 
-    const { userLogin: { userInfo } } = getState()
+    const {userLogin: {userInfo}} = getState()
 
     const config = {
       headers: {

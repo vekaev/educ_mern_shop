@@ -1,180 +1,28 @@
-import User from "../models/user.model.js";
-import asyncHandler from "express-async-handler"
-import generateToken from "../utils/generateToken.js";
+import express from "express";
+import {
+  authUser,
+  deleteUser,
+  getUserById,
+  getUserProfile,
+  getUsers,
+  registerUser,
+  updateUserProfile,
+  updateUserProfileByAdmin,
+} from "../services/user.service.js";
+import { protect } from "../middleware/auth.middleware.js";
+import { admin } from "../middleware/role.middleware.js";
 
-// @desc   Auth user & get token
-// @route  POST /api/users/login
-// @access Public
+const router = express.Router();
 
-const authUser = asyncHandler(async (req, res) => {
-  const {email, password} = req.body;
-  const user = await User.findOne({email})
-
-  if (user && (await user.matchPassword(password))) {
-    res.json({
-      _id: user._id,
-      name: user.name,
-      email: user.email,
-      isAdmin: user.isAdmin,
-      token: generateToken(user._id, user.isAdmin)
-    })
-  } else {
-    res.status(401)
-    throw new Error('Invalid email or password')
-  }
-})
-
-// @desc   Get user profile
-// @route  Get /api/users/profile
-// @access Private
-
-const getUserProfile = asyncHandler(async (req, res) => {
-  const user = await User.findById(req.user._id);
-
-  if(!user) {
-    res.status(404)
-    throw new Error('User not found')
-  }
-
-  res.json({
-    _id: user._id,
-    name: user.name,
-    email: user.email,
-    isAdmin: user.isAdmin,
-  })
-})
-
-
-// @desc   create User
-// @route  POST /api/users
-// @access Public
-
-const registerUser = asyncHandler(async (req, res) => {
-  const {name, email, password} = req.body;
-
-  const userExist = await User.findOne({email})
-
-
-  if (userExist) {
-    res.status(400)
-    throw new Error('User already exists')
-  }
-
-  const user = await User.create({
-    name, email, password
-  })
-
-  if (user) {
-    res.status(201).json({
-      _id: user._id,
-      name: user.name,
-      email: user.email,
-      isAdmin: user.isAdmin,
-      token: generateToken(user._id, user.isAdmin)
-    })
-  } else {
-    res.status(400)
-    throw new Error('Invalid user data')
-  }
-})
-
-
-// @desc   update User Profile
-// @route  PUT /api/users/profile
-// @access Private
-
-const updateUserProfile = asyncHandler(async (req, res) => {
-  const user = await User.findById(req.user._id);
-
-  if(!user) {
-    res.status(404)
-    throw new Error('User not found')
-  }
-
-  user.name = req.body.name || user.name;
-  user.email =  req.body.email || user.email;
-
-  if (req.body.password) {
-    user.password = req.body.password;
-  }
-
-  const updatedUser = await user.save()
-
-  res.json({
-    _id: updatedUser._id,
-    name: updatedUser.name,
-    email: updatedUser.email,
-    isAdmin: updatedUser.isAdmin,
-  })
-})
-
-// @desc   Get users
-// @route  Get /api/users
-// @access Private/Admin
-
-const getUsers = asyncHandler(async (req, res) => {
-  const users = await User.find({});
-
-  res.json(users)
-})
-
-// @desc   Delete user
-// @route  Delete /api/users/:id
-// @access Private/Admin
-
-const deleteUser = asyncHandler(async (req, res) => {
-  const user = await User.findById(req.params.id);
-
-  if (user) {
-    await user.remove()
-    res.json({message: 'User removed'})
-  } else {
-    res.status(404)
-    throw new Error('User not found')
-  }
-
-})
-
-// @desc   Get user by ID
-// @route  Get /api/users/:id
-// @access Private/Admin
-
-const getUserById = asyncHandler(async (req, res) => {
-  const user = await User.findById(req.params.id).select('-password');
-
-  if (!user) {
-    res.status(404)
-    throw new Error('User not found')
-  }
-
-  res.json(user)
-})
-
-// @desc   update User Profile
-// @route  PUT /api/users/:id
-// @access Private/Admin
-
-const updateUserProfileByAdmin = asyncHandler(async (req, res) => {
-  const user = await User.findById(req.params.id);
-
-  if(!user) {
-    res.status(404)
-    throw new Error('User not found')
-  }
-
-  user.name = req.body.name || user.name;
-  user.email =  req.body.email || user.email;
-  user.isAdmin =  req.body.isAdmin || user.isAdmin;
-
-  const updatedUser = await user.save()
-
-  res.json({
-    _id: updatedUser._id,
-    name: updatedUser.name,
-    email: updatedUser.email,
-    isAdmin: updatedUser.isAdmin,
-  })
-})
-
-
-export {authUser, getUserProfile, registerUser, updateUserProfile, getUsers, deleteUser, getUserById, updateUserProfileByAdmin}
+router.route("/").get(protect, admin, getUsers).post(registerUser);
+router
+  .route("/:id")
+  .delete(protect, admin, deleteUser)
+  .get(protect, admin, getUserById)
+  .put(protect, admin, updateUserProfileByAdmin);
+router.route("/login").post(authUser);
+router
+  .route("/profile")
+  .get(protect, getUserProfile)
+  .put(protect, updateUserProfile);
+export default router;

@@ -10,6 +10,9 @@ import PlaceOrderScreen from "./PlaceOrderScreen";
 import OrderScreen from "./OrderScreen";
 import UserListScreen from "./UserListScreen";
 import UserEditScreen from "./UserEditScreen";
+import ProductListScreen from "./ProductListScreen";
+import ProductEditScreen from "./ProductEditScreen";
+import OrderListScreen from "./OrderListScreen";
 
 export {
   HomeScreen,
@@ -22,9 +25,12 @@ export {
   PaymentScreen,
   PlaceOrderScreen,
   OrderScreen,
+  OrderListScreen,
   UserListScreen,
-  UserEditScreen
-}
+  UserEditScreen,
+  ProductListScreen,
+  ProductEditScreen,
+};
 
 // const Screen = () => {
 //   return (<></>)

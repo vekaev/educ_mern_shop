@@ -1,6 +1,7 @@
 import {
   USER_DELETE_FAIL,
-  USER_DELETE_REQUEST, USER_DELETE_SUCCESS,
+  USER_DELETE_REQUEST,
+  USER_DELETE_SUCCESS,
   USER_DETAILS_FAIL,
   USER_DETAILS_REQUEST,
   USER_DETAILS_RESET,
@@ -49,7 +50,7 @@ export const userRegisterReducer = (state = {}, action) => {
   }
 };
 
-export const userDetailsReducer = (state = { user: {}}, action) => {
+export const userDetailsReducer = (state = {user: {}}, action) => {
   switch (action.type) {
     case USER_DETAILS_REQUEST:
       return {...state, loading: true}
@@ -92,7 +93,7 @@ export const usersListReducer = (state = {users: []}, action) => {
   }
 }
 
-export const userDeleteReducer = (state = {} , action) => {
+export const userDeleteReducer = (state = {}, action) => {
   switch (action.type) {
     case USER_DELETE_REQUEST:
       return {loading: true}
