@@ -1,11 +1,11 @@
-import { orderDeliveryReducer } from "./order.reducer";
-
 export {
   productListReducer,
   productDetailsReducer,
   productDeleteReducer,
   productCreateReducer,
   productUpdateReducer,
+  productReviewCreateReducer,
+  productTopListReducer,
 } from "./product.reducer";
 export { cartReducer } from "./cart.reducer";
 export {

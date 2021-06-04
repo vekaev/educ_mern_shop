@@ -5,7 +5,10 @@ import { useDispatch, useSelector } from "react-redux";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
 import FormContainer from "../components/FormContainer";
-import { getUserDetails } from "../store/actions/user.action";
+import {
+  getUserDetails,
+  updateUserProfile,
+} from "../store/actions/user.action";
 
 const UserEditScreen = ({ match, history }) => {
   const userId = match.params.id;
@@ -29,6 +32,8 @@ const UserEditScreen = ({ match, history }) => {
 
   const submitHandler = (e) => {
     e.preventDefault();
+
+    dispatch(updateUserProfile({ name, email }));
   };
 
   return (

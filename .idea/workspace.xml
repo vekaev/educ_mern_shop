@@ -2,20 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="681b796f-860c-417b-a8cb-0d659e6fc44b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/controllers/upload.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/file.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/6/d63b8ace488b6134c279ccc0cc109223d4d79c20" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/9/39b07b44d0e0cb2e394e9607eae884175b87e56a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3d79112c6ecc4bae2054f83701e1a12948f422a8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/850130c1f1e71b2357ba34aafa68783a0c100f13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/91e522be11677dbeaea3b85493b4868d2728cb6c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/order.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/order.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/product.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/product.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/user.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/upload.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/services/upload.service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/indexServer.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/indexServer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/services/order.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/services/order.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/product.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/product.model.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/services/product.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/services/product.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/services/user.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/services/user.service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/image-1621566221520.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,12 +69,32 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="npm.data:import">
     <configuration name="client" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="client" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="data:destroy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="data:destroy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="data:import" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="data:import" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -98,9 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.data:import" />
+        <item itemvalue="npm.data:destroy" />
+        <item itemvalue="npm.server" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.client" />
-        <item itemvalue="npm.server" />
       </list>
     </recent_temporary>
   </component>
@@ -149,7 +175,12 @@
       <workItem from="1621392764260" duration="188000" />
       <workItem from="1621393129258" duration="6138000" />
       <workItem from="1621498742452" duration="1938000" />
-      <workItem from="1621564573432" duration="4808000" />
+      <workItem from="1621564573432" duration="5558000" />
+      <workItem from="1621834882477" duration="1845000" />
+      <workItem from="1622183629976" duration="574000" />
+      <workItem from="1622613277535" duration="2680000" />
+      <workItem from="1622697623340" duration="4023000" />
+      <workItem from="1622778010560" duration="5116000" />
     </task>
     <servers />
   </component>
